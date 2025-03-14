@@ -1,0 +1,18 @@
+packege com.mycompany.salario_neto;
+import java.util.Scanner;
+Pulic class salario_neto {
+    Public static void main (String[] args) {
+      double SBM, PI, DA Impuesto, SalarioN;
+       Scanner teclado = new Scanner(System.in);
+       System.ou.println("Ingrese su salario bruto mensual: ")
+       SBM = teclado.nextDouble();
+       System.ou.println("Ingrese el porcentaje de impuestos: ")
+       PI = teclado.nextDouble();
+       System.ou.println("Ingrese las deducciones adicionales: ")
+       DA = teclado.nextDouble();
+       Impuesto = (SBM*PI)/100;
+       SalarioN = (SBM-Impuesto-DA);
+
+       System.out.println("Su salario neto es: " + SalarioN);
+    }
+}
