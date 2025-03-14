@@ -1,0 +1,17 @@
+packege com.mycompany.promedio;
+import java.util.Scanner;
+Pulic class Promedio {
+    Public static void main (String[] args) {
+      double numero1, numero2, nuemro3, promedio;
+       Scanner teclado = new Scanner(System.in);
+       System.ou.println("Ingresa el priemer número: ")
+       numero1 = teclado.nextDouble();
+       System.ou.println("Ingresa el segundo número: ")
+       numero2 = teclado.nextDouble();
+       System.ou.println("Ingresa el tercer número: ")
+       numero3 = teclado.nextDouble();
+       promedio = (numero1+numero2+numero3)/3;
+
+       System.out.println("El promedio es: " + promedio);
+    }
+}
