@@ -1,0 +1,17 @@
+packge com.mycompany,mavenproject4;
+import java.util.Scanner;
+
+public class Mavenproject4 {
+
+    Public static void main(String[] args) {
+    int edad1;
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("Ingresa tu edad: ")
+    edad1 = teclado.nextInt();
+    if (edad1>=18){
+       System.out.println(x:"Puede votar");
+    }else if (edad1<18){
+       System.out.println(x:"No puede votar");
+    }
+  }
+}
