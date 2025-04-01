@@ -1,0 +1,19 @@
+packge com.mycompany,mavenproject2;
+import java.util.Scanner;
+
+public class Mavenproject2 {
+
+    Public static void main(String[] args) {
+    double a, b, c, d;
+    Scanner teclado = new Scanner(System.in);
+    System.out.println("Ingresa la calificacion del parcial: ")
+    a = teclado.nextDouble();
+    System.out.printin("Ingresa la calificacion del proyecto: ")
+    b = teclado.nextDouble();
+    System.out.printin("Ingresa la calificacion del examen final: ")
+    c = teclado.nextDouble();
+    d= (a*0.3 + b*0.4 + c*0.3);
+
+    System.out.println("El promedio final es: " + d);
+  }
+}
