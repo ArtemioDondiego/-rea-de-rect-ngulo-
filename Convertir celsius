@@ -1,0 +1,26 @@
+public class Mavenproject8 {
+
+    public static void main(String[] args) {
+        int opcion, f, k;
+        String respuesta = null;
+        double C;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Elige la opcion a convertir: ");
+        System.out.println("Fahrenheit");
+        System.out.println("Kelvin");
+        opcion=teclado.nextInt();
+        switch(opcion){
+            case 1-> {
+                System.out.println("Ingresa la temperatura en grados celcius: ");
+                C = teclado.nextDouble();
+                if(respuesta.equals("Fahrenheit")){
+                    f = (int) ((C*9/5)+32);  
+                    System.out.println("La temperatura en Fahrenheit es: " +f);
+                }else if(respuesta.equals("Kelvin")){
+                    k = (int) (C+273.15);
+                    System.out.println("La temperatura en Kelvin es: " +k);
+                }    
+            }
+        }
+    }
+}    
