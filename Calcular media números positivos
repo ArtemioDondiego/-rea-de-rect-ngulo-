@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject21;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author PONT AURELL
+ */
+public class Mavenproject21 {
+
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner( System.in );
+	int num, suma, elementos;
+        float media; 
+	System.out.print("Introduzca un número: ");
+	num=teclado.nextInt();
+        suma= 0;
+	elementos= 0;
+        while(num>=0) 
+	{
+        suma+=num;
+	elementos++;
+        System.out.print("Introduzca el siguiente número: ");
+        num=teclado.nextInt();
+	}
+	if (elementos == 0) // daría un error de división por cero
+        System.out.println("Imposible hacer la media");
+	else
+	{
+        media= (float)suma/elementos;
+	System.out.println("La media es de: " + media);
+	}
+
+    }
+
+}
