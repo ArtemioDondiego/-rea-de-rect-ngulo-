@@ -1,0 +1,54 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject22;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author PONT AURELL
+ */
+public class Mavenproject22 {
+
+    public static void main(String[] args) {
+        double num1, num2, resultado;
+        String operacion;
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingresa el numero 1:");
+        num1 = teclado.nextDouble();
+        System.out.println("Ingresa el numero 2: ");
+        num2 = teclado.nextDouble();
+        System.out.println("Ingresa la operación a realizar (+,-,*,/)");
+        operacion = teclado.next();
+        switch(operacion){
+            case "+":
+                resultado = num1+num2;
+                System.out.println(resultado);
+            break;
+            case "-":
+                resultado = num1-num2;
+                System.out.println(resultado);
+            break;
+            case "*":
+                resultado = num1*num2;
+                System.out.println(resultado);
+            break;
+            case "/":
+            if(num2 ==0){
+                System.out.println("No se puede dividir entre 0");
+            }
+            else{
+                resultado = num1/num2;
+                System.out.println(resultado);
+            }
+                
+            break;
+            default:
+                System.out.println("La opcion no existe");
+            break;
+        }
+    }
+    
+}
