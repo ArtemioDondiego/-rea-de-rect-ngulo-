@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject19;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author PONT AURELL
+ */
+public class Mavenproject19 {
+
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    String cadena;
+    int longitud;
+    char caracter;
+    boolean vocal = true;
+    System.out.print("Introduce las letras a analizar, en caso de querer terminar " + "el programa, introduce un espacio: ");
+    cadena = scanner.nextLine();
+    while (!cadena.equals(" ")){
+      longitud = cadena.length();
+      for (int i=0;(i < longitud);i++){
+        caracter = cadena.toUpperCase().charAt(i);
+        if (caracter == 'A' || caracter == 'E' || caracter == 'I' || caracter == 'O' || caracter == 'U'){
+          vocal = true;
+        } else {
+          vocal =false;
+          cadena = " ";
+          break;
+        }
+      }
+      if (vocal){
+        System.out.println("Las letras son VOCALES.");
+       } else {
+         System.out.println("Loas letras NO SON VOCALES");
+       }
+      System.out.print("Introduce nuevos letras a analizar, en caso de querer terminar " + "el programa, introduce un espacio: ");
+      cadena = scanner.nextLine(); 
+     }
+    System.out.println("FIN DEL PROGRAMA");
+  }
+}
