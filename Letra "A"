@@ -1,0 +1,37 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject15;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author PONT AURELL
+ */
+public class Mavenproject15 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce la palabra: ");
+        String input = scanner.nextLine();
+
+        int a = 0;
+        input = input.toLowerCase(); 
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+
+            if (ch >= 'a') { 
+                if (ch == 'a') {
+                    a++;
+
+                }
+            }
+        }
+
+        System.out.println("Letra a: " + a);
+  
+    }
+}
