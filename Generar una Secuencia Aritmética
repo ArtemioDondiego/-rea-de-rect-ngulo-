@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author macie
+ */
+public class Mavenproject4 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce el límite de la serie: ");
+        int limite = scanner.nextInt();
+        int a = 0, b = 1;
+        
+        do  {
+            System.out.print(a + " ");
+            int temp = a;
+            a = b;
+            b = temp + b;
+        }while (a <= limite);
+        scanner.close();
+    }
+}
