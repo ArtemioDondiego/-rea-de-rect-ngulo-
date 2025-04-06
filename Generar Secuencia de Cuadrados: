@@ -1,0 +1,38 @@
+*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject3;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author macie
+ */
+public class Mavenproject3 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int i, n;
+
+        System.out.print("Introduce un número entero: ");
+
+        n = sc.nextInt();
+
+        System.out.println("Numeros del 1 al " + n + " al cuadrado");                                            
+
+        i = 1;
+
+        do {
+
+            System.out.println(Math.pow(n,2));
+
+            i++;
+
+        } while (i <= n);
+
+    }
+
+}
