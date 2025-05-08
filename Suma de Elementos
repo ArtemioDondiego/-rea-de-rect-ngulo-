@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumaElementos {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int[] numeros = new int[5];  // Arreglo para almacenar 5 números
+        int suma = 0;               // Variable para acumular la suma
+
+        System.out.println("Introduce 5 números enteros:");
+
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Número " + (i + 1) + ": ");
+            numeros[i] = scanner.nextInt();  // Leer número
+            suma += numeros[i];              // Sumar al total
+        }
+
+        // Mostrar el resultado
+        System.out.println("\nLa suma de los elementos es: " + suma);
+
+        scanner.close();
+    }
+}
