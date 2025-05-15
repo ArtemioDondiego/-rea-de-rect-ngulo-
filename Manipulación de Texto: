@@ -1,0 +1,25 @@
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Ingresa un texto largo:");
+        String texto = sc.nextLine();
+
+        texto = texto.toLowerCase();
+
+        String palabraObjetivo = "Ingeniería";
+
+        String[] palabras = texto.split("\\s+|\\p{Punct}");
+
+        int contador = 0;
+        for (String palabra : palabras) {
+            if (palabra.equals(palabraObjetivo)) {
+                contador++;
+            }
+        }
+
+        System.out.println("La palabra \"Ingeniería\" aparece " + contador + " veces.");
+
+        sc.close();
+    }
+}
