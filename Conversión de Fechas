@@ -1,0 +1,27 @@
+  public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+   
+        System.out.print("Ingresa una fecha en formato YYYY-MM-DD: ");
+        String input = scanner.nextLine();
+
+        try {
+  
+            LocalDate fechaOriginal = LocalDate.parse(input);
+
+            LocalDate unaSemanaDespues = fechaOriginal.plusWeeks(1);
+            LocalDate unMesAntes = fechaOriginal.minusMonths(1);
+
+            DateTimeFormatter formatoSalida = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+
+            System.out.println("Fecha original:       " + fechaOriginal.format(formatoSalida));
+            System.out.println("Una semana después:   " + unaSemanaDespues.format(formatoSalida));
+            System.out.println("Un mes antes:         " + unMesAntes.format(formatoSalida));
+        } catch (Exception e) {
+            System.out.println("Error: formato de fecha inválido. Usa YYYY-MM-DD.");
+        }
+
+        scanner.close();
+    }
+}
