@@ -1,0 +1,22 @@
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String entrada;
+
+        System.out.println("Ingresa nombres en minúsculas. Escribe 'salir' para terminar.\n");
+
+        while (true) {
+            System.out.print("Ingresa un nombre: ");
+            entrada = sc.nextLine();
+   
+            if (entrada.equalsIgnoreCase("salir")) {
+                System.out.println("Programa finalizado.");
+                break;
+            }
+
+            String nombreMayusculas = entrada.toUpperCase();
+            System.out.println("Nombre en mayúsculas: " + nombreMayusculas + "\n");
+        }
+
+        sc.close();
+    }
+}
