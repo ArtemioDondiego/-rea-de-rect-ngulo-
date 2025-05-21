@@ -1,0 +1,30 @@
+public class Mavenproject34 {
+
+    public static boolean esPalindromo(String texto) {
+        texto = texto.replaceAll("\\s", "").toLowerCase();
+        int inicio = 0;
+        int fin = texto.length() - 1;
+
+        while (inicio < fin) {
+            if (texto.charAt(inicio) != texto.charAt(fin)) {
+                return false; 
+            }
+            inicio++;
+            fin--;
+        }
+        return true; 
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingresa una cadena de texto: ");
+        String texto = sc.nextLine();
+        
+        if (esPalindromo(texto)) {
+            System.out.println("Es un palíndromo");
+        } else {
+            System.out.println("No es palíndromo");
+        }
+        sc.close();
+    }
+}
+    
