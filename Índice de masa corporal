@@ -4,9 +4,9 @@ Pulic class Indice_masa_corporal {
     Public static void main (String[] args) {
       double Peso, Altura, IMC;
        Scanner teclado = new Scanner(System.in);
-       System.ou.println("Ingrese su peso en kilogramas: ")
+       System.out.println("Ingrese su peso en kilogramas: ");
        peso = teclado.nextDouble();
-       System.ou.println("Ingrese su altura en metros: ")
+       System.out.println("Ingrese su altura en metros: ");
        altura = teclado.nextDouble();
        IMC = Peso/Altura;
 
