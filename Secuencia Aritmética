@@ -1,0 +1,26 @@
+Scanner sc = new Scanner(source:System.in);
+
+
+        System.out.print("Ingresa el primer número de la secuencia: ");
+        int primerNumero = sc.nextInt();
+
+        System.out.print("Ingresa la diferencia entre los números: ");
+        int diferencia = sc.nextInt();
+
+        System.out.print("Ingresa el número máximo hasta el cual debe continuar la secuencia: ");
+        int numeroMaximo = sc.nextInt();
+
+        int actual = primerNumero;
+
+        System.out.println("\nSecuencia aritmética generada:");
+        
+        do {
+            System.out.print(actual + " ");
+            actual += diferencia;
+        } while (actual <= numeroMaximo);
+
+        System.out.println("\n\nFin de la secuencia.");
+
+        sc.close();
+    }
+}
