@@ -1,0 +1,38 @@
+public class Mavenproject35 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(source: System.in);
+
+        System.out.println("Ingresa el nombre de un artista, película o serie:");
+        String eleccion = sc.nextLine();
+
+        eleccion = eleccion.toLowerCase();
+
+        switch (eleccion) {
+            case "taylor swift":
+                System.out.println("Taylor Swift es una cantante y compositora estadounidense famosa por sus álbumes de pop y country.");
+                break;
+
+            case "inception":
+                System.out.println("Inception (2010) es una película de ciencia ficción dirigida por Christopher Nolan, centrada en el mundo de los sueños.");
+                break;
+
+            case "stranger things":
+                System.out.println("Stranger Things es una serie de ciencia ficción y terror de Netflix que sigue las aventuras de un grupo de niños en Hawkins.");
+                break;
+
+            case "the weeknd":
+                System.out.println("The Weeknd es un cantante y productor canadiense conocido por su estilo R&B y éxitos como 'Blinding Lights'.");
+                break;
+
+            case "avengers":
+                System.out.println("Avengers es una serie de películas de superhéroes de Marvel que reúne a personajes icónicos como Iron Man, Thor y Capitán América.");
+                break;
+
+            default:
+                System.out.println("Lo siento, no tengo información sobre eso.");
+                break;
+        }
+
+        sc.close();
+    }
+}
